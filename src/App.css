@@ -1,0 +1,15 @@
+@import "~antd/dist/antd.css";
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.layout-top {
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+  background-color: #3b6ddb;
+  box-shadow: inset 0 80px 60px #1c58b5;
+}
+.layout-content {
+  flex: 1;
+}
