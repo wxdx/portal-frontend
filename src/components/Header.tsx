@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Avatar, Menu, Dropdown, Space } from "antd"
-import { DownOutlined } from "@ant-design/icons"
+import { DownOutlined, HomeTwoTone } from "@ant-design/icons"
 import "./Header.less"
 
 interface menuData {
@@ -27,7 +27,10 @@ const Header: FC = () => {
 
   return (
     <div className="header-box">
-      <div className="header-box-title">内网门户网站</div>
+      <div className="header-box-title">
+        <HomeTwoTone />
+        <span className="header-box-title-name">内网门户网站</span>
+      </div>
       <div className="header-box-user">
         <div className="header-box-user-icon">
           <Avatar src="https://joeschmoe.io/api/v1/random" />
@@ -45,4 +48,4 @@ const Header: FC = () => {
   )
 }
 
-export default () => <Header/>
+export default () => <Header />

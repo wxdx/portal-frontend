@@ -4,6 +4,7 @@ import {
   AppstoreOutlined,
   MailOutlined,
   SettingOutlined,
+  HomeOutlined
 } from "@ant-design/icons"
 
 type MenuItem = Required<MenuProps>["items"][number]
@@ -25,6 +26,7 @@ function getItem(
 }
 
 const items: MenuItem[] = [
+  getItem("首页", "sub0", <HomeOutlined />),
   getItem("Navigation One", "sub1", <MailOutlined />, [
     getItem("Option 1", "1"),
     getItem("Option 2", "2"),
